@@ -56,11 +56,11 @@ export default class SvgText {
     sizeRect(this.rect, this.bounds, this.options.rect);
     offsetByMargin(this.bounds, this.options.margin);
 
-    moveText(this.text, this.options, {
-      fontSize: this.fontSize,
-      lineHeight: this.lineHeight,
-      lines: this.lines
-    });
+    // moveText(this.text, this.options, {
+    //   fontSize: this.fontSize,
+    //   lineHeight: this.lineHeight,
+    //   lines: this.lines
+    // });
   }
 
   /**
