@@ -792,8 +792,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  options = (0, _lodash4.default)({}, options);
 	  options.padding = toArrayLen4(options.padding);
 	  options.margin = toArrayLen4(options.margin);
-	  options.x = addMarginToX(+(options.x || 0), options.align, options.margin);
-	  options.y = addMarginToY(+(options.y || 0), options.verticalAlign, options.margin);
+	  options.x = addMarginToX(0, options.align, options.margin);
+	  options.y = addMarginToY(0, options.verticalAlign, options.margin);
 	  options.width = isPosNum(options.width) ? options.width : 'auto';
 	  options.maxWidth = isPosNum(options.maxWidth) ? options.maxWidth : 'auto';
 	  options.height = isPosNum(options.height) ? options.height : 'auto';
