@@ -231,9 +231,8 @@ function sizeRect(rect, bounds, rectSize) {
       isFinite(rectSize.width) ? rectSize.width : bounds.width);
     rect.setAttribute('height',
       isFinite(rectSize.height) ? rectSize.height : bounds.height);
-      console.log('balls')
-    rect.setAttribute('x', 0);
-    rect.setAttribute('y', 0);
+    // rect.setAttribute('x', bounds.x + (isFinite(rectSize.x) ? rectSize.x : 0));
+    // rect.setAttribute('y', bounds.y + (isFinite(rectSize.y) ? rectSize.y : 0));
   }
 }
 

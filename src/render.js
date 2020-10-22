@@ -96,7 +96,7 @@ export default function render(text, options, lineHeight, fontSize) {
 
       if (!charsRemain) {
         complete = true;
-      } else if (isWordBound(c)) { 
+      } else if (isWordBound(c)) {
         workingLineStr = tmpStrF;
       }
     }
@@ -107,7 +107,7 @@ export default function render(text, options, lineHeight, fontSize) {
 
       // If a newline, mark it as a word boundary
       // If not a newline, we'll split at the last word boundary
-      if(c === '\n') { 
+      if(c === '\n') {
         lastBoundIndex = index
       }
 
@@ -144,9 +144,9 @@ export default function render(text, options, lineHeight, fontSize) {
 
       // Remove temporarily to prevent the width from getting whacky:
       text.removeChild(tspan);
-      
+
       if (isFinalLine || !lineStr) {
-      
+
         complete = true;
       }
 
@@ -209,7 +209,7 @@ function createTspan(text, tmpStrF, lineHeight) {
   if (tspan) {
     writeInnerHTML(tspan, tmpStrF);
   } else {
-    tspan = tspans[tspanIndex] = appendTspan(text, tmpStrF, 0, height);
+    tspan = tspans[tspanIndex] = appendTspan(text, tmpStrF, 0, 0);
     height += lineHeight;
   }
   return tspan;
