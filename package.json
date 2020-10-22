@@ -2,7 +2,7 @@
   "name": "svg-text",
   "version": "0.6.1",
   "description": "Utilities for working with SVG, including SvgText for multiline text.",
-  "main": "./src/index.js",
+  "main": "./dist/svg-text.js",
   "scripts": {
     "test": "jest",
     "watch": "webpack --watch",
@@ -34,7 +34,8 @@
     "lodash.assign": "^4.2.0",
     "lodash.isfinite": "^3.3.2",
     "lodash.merge": "^4.6.0",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "webpack-cli": "^4.1.0"
   },
   "jest": {
     "testRegex": "(/spec/.*|\\.(test|spec))\\.(spec.js|js|json|jsx|node)$"
