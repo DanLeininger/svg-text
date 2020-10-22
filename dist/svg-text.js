@@ -360,8 +360,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (rect) {
 	    rect.setAttribute('width', (0, _lodash2.default)(rectSize.width) ? rectSize.width : bounds.width);
 	    rect.setAttribute('height', (0, _lodash2.default)(rectSize.height) ? rectSize.height : bounds.height);
-	    rect.setAttribute('x', bounds.x + ((0, _lodash2.default)(rectSize.x) ? rectSize.x : 0));
-	    rect.setAttribute('y', bounds.y + ((0, _lodash2.default)(rectSize.y) ? rectSize.y : 0));
+	    // rect.setAttribute('x', bounds.x + (isFinite(rectSize.x) ? rectSize.x : 0));
+	    // rect.setAttribute('y', bounds.y + (isFinite(rectSize.y) ? rectSize.y : 0));
 	  }
 	}
 
