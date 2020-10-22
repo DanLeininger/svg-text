@@ -258,16 +258,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	  options.svg = options.svg || _svgEl || null;
 	  options.styleElement = options.styleElement || _styleEl || null;
 	  var svgEl = options.element || document.body;
-	  while (svgEl && svgEl.nodeName.toUpperCase() !== 'SVG') {
-	    svgEl = svgEl.parentElement;
-	  }
-	  svgEl = svgEl || document.body;
-	  if (svgEl.nodeName.toUpperCase() !== 'SVG') {
-	    svgEl = (0, _svg.createElement)('svg', {
-	      width: 640, height: 480, 'data-svgtext': getSvgUid()
-	    });
-	    (options.element || document.body).appendChild(svgEl);
-	  }
+	  // while (svgEl && svgEl.nodeName.toUpperCase() !== 'SVG') {
+	  //   svgEl = svgEl.parentElement;
+	  // }
+	  // svgEl = svgEl || document.body;
+	  // if (svgEl.nodeName.toUpperCase() !== 'SVG') {
+	  //   svgEl = createElement('svg', {
+	  //     width: 640, height: 480, 'data-svgtext': getSvgUid()
+	  //   });
+	  //   (options.element || document.body).appendChild(svgEl);
+	  // }
 	  options.svg = svgEl;
 	  if (!options.svg.hasAttribute('data-svgtext')) {
 	    options.svg.setAttribute('data-svgtext', getSvgUid());
